@@ -1,13 +1,6 @@
 import { Icon } from "@iconify/react";
 import { v4 as uuid } from "uuid";
-
-type NavigationItem = {
-  id: string;
-  href: string;
-  icon: string | React.ReactNode;
-  text: string;
-  external?: boolean;
-};
+import { NavigationItem } from "../types";
 
 export const ACTIONS: Array<NavigationItem> = [
   {
@@ -28,7 +21,6 @@ export const ACTIONS: Array<NavigationItem> = [
     icon: <Icon icon="feather:edit-3" className="mr-3" />,
     text: "Blogs",
   },
-
   {
     id: uuid(),
     href: "https://github.com/ra-kesh",
