@@ -17,19 +17,10 @@ export const Standard = () => {
     <DisclousureNav>
       <Container.Nav>
         <Content.Nav>
-          <button>
-            <Icon icon="feather:menu" />
-          </button>
-          {/* <Navbar.Dropdown items={ACTIONS}>
-            <button>
-              <Icon icon="feather:menu" />
-            </button>
-          </Navbar.Dropdown>
+          <span>/home</span>
           <Navbar.Dropdown items={ACTIONS}>
-            <button>
-              <Icon icon="feather:menu" />
-            </button>
-          </Navbar.Dropdown> */}
+            <Icon icon="feather:menu"></Icon>
+          </Navbar.Dropdown>
         </Content.Nav>
       </Container.Nav>
     </DisclousureNav>
