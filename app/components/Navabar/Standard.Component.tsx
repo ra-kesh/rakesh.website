@@ -1,8 +1,8 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { Container, Content, Navbar } from "..";
-import { ACTIONS } from "@/app/data/actions";
 import { Icon } from "@iconify/react";
+import { NAVIGATIONS } from "@/app/data";
 
 const DisclousureNav = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -18,7 +18,7 @@ export const Standard = () => {
       <Container.Nav>
         <Content.Nav>
           <span>/home</span>
-          <Navbar.Dropdown items={ACTIONS}>
+          <Navbar.Dropdown items={NAVIGATIONS}>
             <Icon icon="feather:menu"></Icon>
           </Navbar.Dropdown>
         </Content.Nav>
