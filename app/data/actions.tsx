@@ -13,7 +13,7 @@ export const ACTIONS: Array<NavigationItem> = [
   {
     id: uuid(),
     href: "/about",
-    icon: <Icon icon="feather:edit-3" className="mr-3" />,
+    icon: <Icon icon="feather:user" className="mr-3" />,
     text: "About",
   },
   {
@@ -21,6 +21,12 @@ export const ACTIONS: Array<NavigationItem> = [
     href: "/projects",
     icon: <Icon icon="feather:code" className="mr-3" />,
     text: "Projects",
+  },
+  {
+    id: uuid(),
+    href: "/blogs",
+    icon: <Icon icon="feather:edit-3" className="mr-3" />,
+    text: "Blogs",
   },
 
   {
