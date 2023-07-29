@@ -10,8 +10,7 @@ import {
   Button,
   Layout,
 } from "./components";
-
-import { ACTIONS } from "./data/actions";
+import { ACTIONS } from "./data";
 
 export default function Home() {
   return (
