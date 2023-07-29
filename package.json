@@ -23,6 +23,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@headlessui/react": "^1.7.16",
     "@iconify/react": "^4.1.1",
     "@types/uuid": "^9.0.2",
     "uuid": "^9.0.0"
