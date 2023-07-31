@@ -11,16 +11,16 @@ export const ACTIONS: Array<NavigationItem> = [
   },
   {
     id: uuid(),
-    href: "/projects",
-    icon: <Icon icon="feather:code" className="mr-3" />,
-    text: "Projects",
+    href: "/work",
+    icon: <Icon icon="feather:briefcase" className="mr-3" />,
+    text: "Work",
   },
-  {
-    id: uuid(),
-    href: "/blogs",
-    icon: <Icon icon="feather:edit-3" className="mr-3" />,
-    text: "Blogs",
-  },
+  // {
+  //   id: uuid(),
+  //   href: "/blogs",
+  //   icon: <Icon icon="feather:edit-3" className="mr-3" />,
+  //   text: "Blogs",
+  // },
   {
     id: uuid(),
     href: "https://github.com/ra-kesh",

@@ -1,16 +1,7 @@
 import { v4 as uuid } from "uuid";
+import { WorkItem } from "../types";
 
-export type ProjectItem = {
-  id: string;
-  title: string;
-  link: string;
-  source: string;
-  stack: Array<string>;
-  description: string;
-  active: boolean;
-};
-
-export const PROJECTS: Array<ProjectItem> = [
+export const PROJECTS: Array<WorkItem> = [
   {
     id: uuid(),
     title: "MAD",
