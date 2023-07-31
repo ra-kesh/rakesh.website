@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Container, Content, Description, Layout, Title } from "../components";
+import { Container, Content, Description, Layout } from "../components";
 
 export default function About() {
   return (
