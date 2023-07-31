@@ -1,6 +1,6 @@
-import { ProjectItem } from "@/app/data/projects";
 import React from "react";
 import { Container, Content } from "..";
+import { WorkItem } from "@/app/types";
 
 const MetaContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -21,7 +21,7 @@ const Description = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const Project = ({ description, title, stack }: ProjectItem) => {
+export const Work = ({ description, title, stack }: WorkItem) => {
   return (
     <Container.ListItem>
       <Content.ListItem>
@@ -31,7 +31,7 @@ export const Project = ({ description, title, stack }: ProjectItem) => {
             <Description> {description}</Description>
             <Description>
               {" "}
-              {stack.map((item, index) => {
+              {stack?.map((item, index) => {
                 return (
                   <span key={index} className="mx-1">
                     {item}
