@@ -9,8 +9,8 @@ import {
   Actions,
   Button,
   Layout,
-} from "./components";
-import { ACTIONS } from "./data";
+} from "../components";
+import { ACTIONS } from "../data";
 
 export default function Home() {
   return (
