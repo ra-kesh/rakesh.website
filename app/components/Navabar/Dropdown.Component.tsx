@@ -1,3 +1,4 @@
+import { classNames } from "@/app/lib/util";
 import { NavigationItem } from "@/app/types";
 import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
@@ -29,10 +30,6 @@ const MenuItemsClassName =
 
 const MenuButtonClassName =
   "relative inline-block px-3 py-2 hover:bg-gray-50 text-gray-500 hover:text-gray-900 rounded-lg transition ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary-500";
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export const Dropdown = ({ children, items }: DropdownProps) => {
   return (
