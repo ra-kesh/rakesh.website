@@ -4,7 +4,7 @@ import {
   Container,
   Content,
   Description,
-  Title,
+  TitlePrimary,
   Wave,
   Actions,
   Button,
@@ -17,9 +17,9 @@ export default function Home() {
     <Layout.Standard>
       <Container.Home>
         <Content.Home>
-          <Title>
+          <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
-          </Title>
+          </TitlePrimary>
           <Description>
             A frontend developer who loves to work on React and all things
             JavaScript/TypeScript.
