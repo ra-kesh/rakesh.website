@@ -6,7 +6,7 @@ interface ListProps<T> {
 export function List<T>({ item: Component, items }: ListProps<T>) {
   return (
     <ul
-      className="flex flex-col sm:flex-row items-center justify-center lg:justify-evenly w-full flex-wrap"
+      className="flex flex-col sm:flex-row items-center justify-center lg:justify-start w-full flex-wrap gap-x-4 px-4"
       role="list"
     >
       {items.map((item) => (
