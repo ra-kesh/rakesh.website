@@ -4,7 +4,6 @@ import React from "react";
 import {
   Container,
   Content,
-  Card,
   Layout,
   TabsContent,
   TabsList,
@@ -12,6 +11,7 @@ import {
   TabGroup,
 } from "../components";
 import { BLOGS, PROJECTS } from "../data";
+import { ProjectCard, BlogCard } from "./component";
 
 export default function Projects() {
   return (
@@ -24,10 +24,10 @@ export default function Projects() {
               <TabsTrigger>Blogs</TabsTrigger>
             </TabsList>
             <TabsContent>
-              <Container.List items={PROJECTS} item={Card.Work} />{" "}
+              <Container.List items={PROJECTS} item={ProjectCard} />{" "}
             </TabsContent>
             <TabsContent>
-              <Container.List items={BLOGS} item={Card.Work} />
+              <Container.List items={BLOGS} item={BlogCard} />
             </TabsContent>
           </TabGroup>
         </Content.Project>
