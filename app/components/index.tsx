@@ -2,9 +2,16 @@ export * as Container from "./Container";
 export * as Content from "./Content";
 export * as Navbar from "./Navabar";
 export * as Layout from "./Layout";
-export * as Card from "./Card";
 export { TabGroup, TabsList, TabsTrigger, TabsContent } from "./Tabs.Component";
 export { TitlePrimary, TitleSecondary } from "./Title.Component";
+export {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "./Card.Component";
 
 import Description from "./Description.Component";
 
