@@ -23,6 +23,7 @@ export {
   HomeContent,
   NavContent,
 } from "./Content.Component";
+export { MenuGroup, MenuButton, MenuItems, MenuItem } from "./Menu.Component";
 export { Icons } from "./Icon.Component";
 
 export { Description } from "./Description.Component";
