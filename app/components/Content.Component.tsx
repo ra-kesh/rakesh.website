@@ -10,7 +10,7 @@ const WorkContent = React.forwardRef<
       ref={ref}
       className={classNames(
         "max-w-md sm:max-w-lg md:sm:max-w-3xl lg:sm:max-w-5xl w-full",
-        " mx-auto mt-32",
+        " mx-auto",
         className
       )}
       {...props}

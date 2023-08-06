@@ -11,6 +11,7 @@ const WorkContainer = React.forwardRef<
       className={classNames(
         "flex flex-col sm:flex-row justify-center",
         "min-h-screen",
+        "mt-32",
         className
       )}
       {...props}
@@ -29,7 +30,7 @@ const AboutContainer = React.forwardRef<
       ref={ref}
       className={classNames(
         "flex items-center justify-center",
-        "mt-40",
+        "mt-32",
         className
       )}
       {...props}
