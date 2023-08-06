@@ -35,7 +35,7 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
         <MenuItems>
           {items.map((section, index) => {
             return (
-              <section key={index}>
+              <section key={index} className="py-1">
                 {section.map((item) => {
                   return (
                     <MenuItem key={item.id}>
