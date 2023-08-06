@@ -2,13 +2,13 @@
 
 import {
   Container,
-  Content,
   Description,
   TitlePrimary,
   Wave,
   Actions,
   Button,
   Layout,
+  HomeContent,
 } from "../components";
 import { ACTIONS } from "../data";
 
@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <Layout.Standard>
       <Container.Home>
-        <Content.Home>
+        <HomeContent>
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
           </TitlePrimary>
-          <Description>
+          <Description className="text-xl">
             A frontend developer who loves to work on React and all things
             JavaScript/TypeScript.
           </Description>
@@ -40,7 +40,7 @@ export default function Home() {
               );
             })}
           </Actions>
-        </Content.Home>
+        </HomeContent>
       </Container.Home>
     </Layout.Standard>
   );
