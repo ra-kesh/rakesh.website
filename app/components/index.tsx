@@ -17,13 +17,13 @@ export {
   ListContainer,
   AboutContainer,
 } from "./Container.Component";
-export { WorkContent, AboutContent } from "./Content.Component";
+export { WorkContent, AboutContent, HomeContent } from "./Content.Component";
 export { Icons } from "./Icon.Component";
 
-import Description from "./Description.Component";
+export { Description } from "./Description.Component";
 
 import Wave from "./Wave.Component";
 import Actions from "./Action.Component";
 import Button from "./Button.Component";
 
-export { Description, Wave, Actions, Button };
+export { Wave, Actions, Button };

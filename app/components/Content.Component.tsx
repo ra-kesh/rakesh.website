@@ -39,4 +39,20 @@ const AboutContent = React.forwardRef<
 
 AboutContent.displayName = "AboutContent";
 
-export { WorkContent, AboutContent };
+const HomeContent = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div
+      className={classNames(
+        " max-w-lg sm:max-w-xl md:max-w-4xl  w-full",
+        "text-center",
+        className
+      )}
+      {...props}
+    />
+  );
+};
+
+export { WorkContent, AboutContent, HomeContent };
