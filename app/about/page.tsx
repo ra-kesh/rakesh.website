@@ -2,8 +2,8 @@
 
 import React from "react";
 import {
-  Container,
-  Content,
+  AboutContent,
+  AboutContainer,
   Description,
   Layout,
   TitleSecondary,
@@ -12,8 +12,8 @@ import {
 export default function About() {
   return (
     <Layout.Standard>
-      <Container.About>
-        <Content.About>
+      <AboutContainer>
+        <AboutContent>
           <TitleSecondary>Hi There !</TitleSecondary>
           <Description>
             I am a frontend developer based out of India, who loves to craft
@@ -50,8 +50,8 @@ export default function About() {
             After a eventful year at INVACT, I am looking out for my next
             adventure right now.
           </Description>
-        </Content.About>
-      </Container.About>
+        </AboutContent>
+      </AboutContainer>
     </Layout.Standard>
   );
 }
