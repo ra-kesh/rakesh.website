@@ -2,13 +2,14 @@
 
 import React from "react";
 import {
-  Container,
-  Content,
   Layout,
   TabsContent,
   TabsList,
   TabsTrigger,
   TabGroup,
+  WorkContent,
+  WorkContainer,
+  ListContainer,
 } from "../components";
 import { BLOGS, PROJECTS } from "../data";
 import { ProjectCard, BlogCard } from "./component";
@@ -16,22 +17,22 @@ import { ProjectCard, BlogCard } from "./component";
 export default function Projects() {
   return (
     <Layout.Standard>
-      <Container.Project>
-        <Content.Project>
+      <WorkContainer>
+        <WorkContent>
           <TabGroup>
             <TabsList>
               <TabsTrigger>Projects</TabsTrigger>
               <TabsTrigger>Blogs</TabsTrigger>
             </TabsList>
             <TabsContent>
-              <Container.List items={PROJECTS} item={ProjectCard} />{" "}
+              <ListContainer items={PROJECTS} item={ProjectCard} />{" "}
             </TabsContent>
             <TabsContent>
-              <Container.List items={BLOGS} item={BlogCard} />
+              <ListContainer items={BLOGS} item={BlogCard} />
             </TabsContent>
           </TabGroup>
-        </Content.Project>
-      </Container.Project>
+        </WorkContent>
+      </WorkContainer>
     </Layout.Standard>
   );
 }
