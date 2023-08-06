@@ -1,10 +1,20 @@
 import React from "react";
 
-const Description = ({ children }: { children: React.ReactNode }) => {
+import { classNames } from "../lib/util";
+
+export const Description = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <p className="max-w-xs md:max-w-3xl my-4 md:my-8 mx-auto text-base text-gray-700 sm:text-lg  ">
-      {children}
-    </p>
+    <p
+      className={classNames(
+        "max-w-xs md:max-w-4xl",
+        "mx-auto my-4 md:my-8 ",
+        "text-base text-gray-700 ",
+        className
+      )}
+      {...props}
+    />
   );
 };
-export default Description;
