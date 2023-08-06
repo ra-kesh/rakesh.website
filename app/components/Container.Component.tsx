@@ -62,4 +62,34 @@ function ListContainer<T>({ item: Component, items, className }: ListProps<T>) {
   );
 }
 
-export { WorkContainer, ListContainer, AboutContainer };
+const NavContainer = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div className={classNames("mx-auto px-2 md:px-5", className)} {...props} />
+  );
+};
+
+const HomeContainer = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div
+      className={classNames(
+        "min-h-screen flex items-center justify-center",
+        className
+      )}
+      {...props}
+    />
+  );
+};
+
+export {
+  WorkContainer,
+  ListContainer,
+  AboutContainer,
+  NavContainer,
+  HomeContainer,
+};
