@@ -12,11 +12,22 @@ import {
 } from "../components";
 import { ACTIONS } from "../data";
 
+const Pill = () => {
+  return (
+    <div className="hidden md:block border border-gray-300 hover:border-gray-500 mb-6 py-1 px-3 max-w-fit mx-auto rounded-full ">
+      <span className="text-sm font-medium text-gray-700">
+        Currently looking for my next full time role
+      </span>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <Layout.Standard>
       <HomeContainer>
         <HomeContent>
+          <Pill />
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
           </TitlePrimary>
