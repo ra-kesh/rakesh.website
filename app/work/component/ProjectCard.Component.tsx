@@ -1,13 +1,13 @@
 import React from "react";
-import { ProjectItem, WorkItem } from "@/app/types";
+import { ProjectItem } from "@/app/types";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
+  Icons,
 } from "../../components";
-import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 
 export const ProjectCard = ({
@@ -42,10 +42,7 @@ export const ProjectCard = ({
           target="_blank"
           className="rounded-full p-2 cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out "
         >
-          <Icon
-            icon="feather:github"
-            className="text-gray-700 hover:text-gray-900"
-          />
+          <Icons.Github className="h-6 w-6 text-gray-800 hover:text-gray-900" />
         </Link>
         <Link
           href={link}
