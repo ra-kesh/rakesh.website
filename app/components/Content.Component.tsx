@@ -55,4 +55,21 @@ const HomeContent = ({
   );
 };
 
-export { WorkContent, AboutContent, HomeContent };
+const NavContent = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div
+      className={classNames(
+        "relative",
+        "flex items-center justify-between ",
+        "h-16",
+        className
+      )}
+      {...props}
+    />
+  );
+};
+
+export { WorkContent, AboutContent, HomeContent, NavContent };
