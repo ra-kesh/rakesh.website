@@ -12,6 +12,12 @@ export {
   CardDescription,
   CardContent,
 } from "./Card.Component";
+export {
+  WorkContainer,
+  ListContainer,
+  AboutContainer,
+} from "./Container.Component";
+export { WorkContent, AboutContent } from "./Content.Component";
 
 import Description from "./Description.Component";
 
