@@ -46,8 +46,10 @@ export default function About() {
             company.
             <br />
             <br />
-            After a eventful year at INVACT, I am looking out for my next
-            adventure right now.
+            After a eventful year at Bangalore and INVACT, currently I am taking
+            a break and spending some time with family.
+            <br />
+            <br />
           </Description>
         </AboutContent>
       </AboutContainer>
