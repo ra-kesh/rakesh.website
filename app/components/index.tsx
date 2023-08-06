@@ -18,6 +18,7 @@ export {
   AboutContainer,
 } from "./Container.Component";
 export { WorkContent, AboutContent } from "./Content.Component";
+export { Icons } from "./Icon.Component";
 
 import Description from "./Description.Component";
 
