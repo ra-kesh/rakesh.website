@@ -24,7 +24,7 @@ const TitleSecondary = ({
     <h2
       className={classNames(
         "text-2xl md:text-3xl font-bold text-gray-900",
-        "max-w-xs md:max-w-3xl mx-auto",
+        "max-w-xs md:max-w-4xl mx-auto",
         "leading-tight tracking-tighter lg:leading-[1.1]",
         className
       )}
