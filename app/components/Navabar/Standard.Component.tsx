@@ -1,6 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import { Container, Content, Navbar } from "..";
+import { NavContainer, NavContent, Navbar } from "..";
 import { Icon } from "@iconify/react";
 import { NAVIGATIONS } from "@/app/data";
 import { usePathname } from "next/navigation";
@@ -18,14 +18,14 @@ export const Standard = () => {
 
   return (
     <DisclousureNav>
-      <Container.Nav>
-        <Content.Nav>
+      <NavContainer>
+        <NavContent>
           <span>{pathName}</span>
           <Navbar.Dropdown items={NAVIGATIONS}>
             <Icon icon="feather:menu"></Icon>
           </Navbar.Dropdown>
-        </Content.Nav>
-      </Container.Nav>
+        </NavContent>
+      </NavContainer>
     </DisclousureNav>
   );
 };

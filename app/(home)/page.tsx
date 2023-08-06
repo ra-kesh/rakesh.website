@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Container,
   Description,
   TitlePrimary,
   Wave,
@@ -9,13 +8,14 @@ import {
   Button,
   Layout,
   HomeContent,
+  HomeContainer,
 } from "../components";
 import { ACTIONS } from "../data";
 
 export default function Home() {
   return (
     <Layout.Standard>
-      <Container.Home>
+      <HomeContainer>
         <HomeContent>
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
@@ -41,7 +41,7 @@ export default function Home() {
             })}
           </Actions>
         </HomeContent>
-      </Container.Home>
+      </HomeContainer>
     </Layout.Standard>
   );
 }
