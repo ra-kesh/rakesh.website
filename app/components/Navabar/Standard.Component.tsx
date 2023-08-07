@@ -3,7 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { NavContainer, NavContent, Navbar } from "..";
 import { Icon } from "@iconify/react";
 import { NAVIGATIONS } from "@/app/data";
-import { usePathname } from "next/navigation";
+import { useGetPathName } from "./useGetPathName.hook";
 
 const DisclousureNav = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -20,22 +20,15 @@ export const Standard = () => {
     <DisclousureNav>
       <NavContainer>
         <NavContent>
-          <span>{pathName}</span>
-          <Navbar.Dropdown items={NAVIGATIONS}>
-            <Icon icon="feather:menu"></Icon>
-          </Navbar.Dropdown>
+          <span className="capitalize font-medium">~/&nbsp;{pathName}</span>
+          <div className="flex items-center gap-x-4">
+            {/* <Icon icon="feather:menu" /> */}
+            <Navbar.Dropdown items={NAVIGATIONS}>
+              <Icon icon="feather:menu" />
+            </Navbar.Dropdown>
+          </div>
         </NavContent>
       </NavContainer>
     </DisclousureNav>
   );
-};
-
-const useGetPathName = () => {
-  let pathName = usePathname();
-
-  if (pathName === "/") {
-    return (pathName = "~/home");
-  } else {
-    return "~" + pathName;
-  }
 };
