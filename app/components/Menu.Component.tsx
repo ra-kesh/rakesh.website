@@ -29,7 +29,8 @@ const MenuButton = React.forwardRef<
         "relative inline-block rounded-lg px-3 py-2",
         " hover:bg-gray-50 text-gray-500 hover:text-gray-900",
         " transition ease-in-out duration-300 ",
-        "focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary-500",
+        "focus:outline-none focus:ring-2 focus:ring-offset-1 ",
+        // 'focus:ring-primary-500'
         className
       )}
       {...props}

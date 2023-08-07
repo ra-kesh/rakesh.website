@@ -38,7 +38,8 @@ const TabsTrigger = React.forwardRef<
         "py-1 px-4 rounded-lg text-sm font-medium  cursor-pointer",
         "hover:bg-gray-50 hover:text-gray-600",
         "transition ease-in-out duration-300",
-        "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500",
+        "focus:outline-none focus:ring-2 focus:ring-offset-2 ",
+        // "focus:ring-primary-500",
         selected
           ? "bg-white border border-gray-200 text-gray-700"
           : "text-gray-400",
