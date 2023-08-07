@@ -49,11 +49,10 @@ const MenuItems = React.forwardRef<
       ref={ref}
       className={classNames(
         "absolute z-10 right-0 origin-top-right",
-        "w-56 mt-2 p-2",
+        " mt-2 ",
         "bg-gray-50 bg-opacity-75 backdrop-filter backdrop-blur-sm border border-gray-100",
         "rounded-md shadow-lg",
         "focus:outline-none ring-black ring-opacity-5",
-        "divide-y divide-gray-100",
         className
       )}
       {...props}
