@@ -32,7 +32,7 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
     <MenuGroup>
       <MenuButton>{children}</MenuButton>
       <DropDownTransition>
-        <MenuItems>
+        <MenuItems className="w-56 divide-y divide-gray-100 p-2">
           {items.map((section, index) => {
             return (
               <section key={index} className="py-1">

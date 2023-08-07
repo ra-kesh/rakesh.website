@@ -21,8 +21,8 @@ export const Standard = () => {
       <NavContainer>
         <NavContent>
           <span className="capitalize font-medium">~/&nbsp;{pathName}</span>
-          <div className="flex items-center gap-x-4">
-            {/* <Icon icon="feather:menu" /> */}
+          <div className="flex items-center gap-x-2">
+            <Navbar.Toggle />
             <Navbar.Dropdown items={NAVIGATIONS}>
               <Icon icon="feather:menu" />
             </Navbar.Dropdown>
