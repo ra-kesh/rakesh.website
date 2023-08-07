@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import { v4 as uuid } from "uuid";
 import { NavigationItem } from "../types";
+import { siteConfig } from "../lib/config";
 
 export const NAVIGATIONS: Array<Array<NavigationItem>> = [
   [
@@ -26,7 +27,7 @@ export const NAVIGATIONS: Array<Array<NavigationItem>> = [
   [
     {
       id: uuid(),
-      href: "https://github.com/ra-kesh",
+      href: siteConfig.links.github,
       external: true,
       icon: <Icon icon="feather:github" className="mr-3" />,
       text: "Github",
@@ -34,14 +35,14 @@ export const NAVIGATIONS: Array<Array<NavigationItem>> = [
 
     {
       id: uuid(),
-      href: "https://twitter.com/kumarakeshh",
+      href: siteConfig.links.twitter,
       external: true,
       icon: <Icon icon="feather:twitter" className="mr-3" />,
       text: "Twitter",
     },
     {
       id: uuid(),
-      href: "https://www.linkedin.com/in/iamrakeshkumar/",
+      href: siteConfig.links.linkedin,
       external: true,
       icon: <Icon icon="feather:linkedin" className="mr-3" />,
       text: "Linkedin",
@@ -50,7 +51,7 @@ export const NAVIGATIONS: Array<Array<NavigationItem>> = [
   [
     {
       id: uuid(),
-      href: "https://rakesh.website/cv",
+      href: siteConfig.links.cv,
       external: true,
       icon: <Icon icon="feather:file-text" className="mr-3" />,
       text: "Resume",
