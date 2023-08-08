@@ -65,9 +65,7 @@ const NavContainer = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => {
-  return (
-    <div className={classNames("mx-auto px-2 md:px-5", className)} {...props} />
-  );
+  return <div className={classNames("mx-auto px-2 ", className)} {...props} />;
 };
 
 const HomeContainer = ({

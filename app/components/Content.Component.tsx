@@ -65,6 +65,7 @@ const NavContent = ({
         "relative",
         "flex items-center justify-between ",
         "h-16",
+        "mx-auto md:max-w-7xl",
         className
       )}
       {...props}
