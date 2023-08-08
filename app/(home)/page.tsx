@@ -4,7 +4,6 @@ import {
   Description,
   TitlePrimary,
   Wave,
-  Actions,
   Button,
   Layout,
   HomeContent,

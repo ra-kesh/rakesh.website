@@ -15,7 +15,7 @@ export const Toggle = () => {
         <Icon icon="feather:moon" className="hidden dark:block" />
       </MenuButton>
       <DropDownTransition>
-        <MenuItems className="w-28 flex flex-col p-2 ">
+        <MenuItems className="w-28 flex flex-col p-2">
           {THEMES.map((theme) => {
             return (
               <MenuItem

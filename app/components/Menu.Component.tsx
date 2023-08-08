@@ -46,10 +46,9 @@ const MenuItems = React.forwardRef<
     <Menu.Items
       ref={ref}
       className={classNames(
-        "absolute z-10 right-0 origin-top-right",
-        " mt-2 ",
-        "bg-popover text-popover-foreground border border-gray-100",
-        "rounded-md shadow-md",
+        "absolute z-10 right-0 origin-top-right mt-2",
+        "bg-popover text-popover-foreground border border-border",
+        "rounded-lg shadow-md",
         className
       )}
       {...props}

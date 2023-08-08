@@ -11,31 +11,15 @@ type DropdownProps = {
   items: Array<Array<NavigationItem>>;
 };
 
-const DropDownTransition = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Transition
-      as={React.Fragment}
-      enter="transition ease-out duration-100"
-      enterFrom="transform opacity-0 scale-95"
-      enterTo="transform opacity-100 scale-100"
-      leave="transition ease-in duration-75"
-      leaveFrom="transform opacity-100 scale-100"
-      leaveTo="transform opacity-0 scale-95"
-    >
-      {children}
-    </Transition>
-  );
-};
-
 export const Dropdown = ({ children, items }: DropdownProps) => {
   return (
     <MenuGroup>
       <MenuButton>{children}</MenuButton>
       <DropDownTransition>
-        <MenuItems className="w-56 divide-y divide-gray-100 p-2">
+        <MenuItems className="w-56 divide-y divide-border px-2 ">
           {items.map((section, index) => {
             return (
-              <section key={index} className="py-1">
+              <section key={index} className="py-2">
                 {section.map((item) => {
                   return (
                     <MenuItem key={item.id}>
@@ -44,7 +28,7 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
                         rel={item.external ? "noopener noreferrer" : ""}
                         target={item.external ? "_blank" : ""}
                         className={classNames(
-                          "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-md cursor-pointer transition ease-in-out duration-300 "
+                          "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-lg cursor-pointer transition ease-in-out duration-300 "
                         )}
                       >
                         {item.icon}
@@ -65,5 +49,21 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
         </MenuItems>
       </DropDownTransition>
     </MenuGroup>
+  );
+};
+
+const DropDownTransition = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Transition
+      as={React.Fragment}
+      enter="transition ease-out duration-100"
+      enterFrom="transform opacity-0 scale-95"
+      enterTo="transform opacity-100 scale-100"
+      leave="transition ease-in duration-75"
+      leaveFrom="transform opacity-100 scale-100"
+      leaveTo="transform opacity-0 scale-95"
+    >
+      {children}
+    </Transition>
   );
 };
