@@ -29,7 +29,6 @@ export { Icons } from "./Icon.Component";
 export { Description } from "./Description.Component";
 
 import Wave from "./Wave.Component";
-import Actions from "./Action.Component";
 import Button from "./Button.Component";
 
-export { Wave, Actions, Button };
+export { Wave, Button };

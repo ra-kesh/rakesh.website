@@ -15,7 +15,7 @@ const Button = ({ children, href, rel, target, ...rest }: ButtonProps) => {
         className="
         inline-flex items-center justify-center w-full sm:w-auto 
         font-medium
-        border border-border bg-background shadow-sm hover:bg-accent hover:text-accent-foreground
+        border border-border bg-background shadow-sm hover:bg-muted text-accent-foreground
         rounded-lg cursor-pointer
         transition ease-in-out duration-300
         px-6 py-2

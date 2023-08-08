@@ -66,7 +66,7 @@ const MenuItem = React.forwardRef<
     <Menu.Item
       ref={ref}
       className={classNames(
-        "hover:bg-accent focus:bg-accent text-accent-foreground  ",
+        "hover:bg-muted focus:bg-muted text-accent-foreground  ",
         className
       )}
       {...props}

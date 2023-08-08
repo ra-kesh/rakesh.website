@@ -49,7 +49,7 @@ export default function Home() {
 const Pill = () => {
   return (
     <div className="hidden md:block border border-border mb-6 py-1 px-3 max-w-fit mx-auto rounded-full ">
-      <span className="text-sm font-medium ">
+      <span className="text-xs font-medium text-accent-foreground">
         Currently looking for my next full time role
       </span>
     </div>
