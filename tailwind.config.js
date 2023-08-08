@@ -12,6 +12,9 @@ module.exports = {
       mono: ["var(--font-roboto-mono)"],
     },
     extend: {
+      colors: {
+        background: "hsl(var(--background))",
+      },
       keyframes: {
         wave: {
           "0%": { transform: "rotate(0.0deg)" },
