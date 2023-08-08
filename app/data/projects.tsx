@@ -24,7 +24,7 @@ export const PROJECTS: Array<ProjectItem> = [
   },
   {
     id: uuid(),
-    title: "RunReact",
+    title: "Run React",
     link: "https://runreact.netlify.app/",
     source: "https://github.com/ra-kesh/snowpack-ide",
     linkText: "rakesh.website/run",
