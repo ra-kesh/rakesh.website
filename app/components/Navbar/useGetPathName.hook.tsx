@@ -6,6 +6,6 @@ export const useGetPathName = () => {
   if (pathName === "/") {
     return (pathName = "home");
   } else {
-    return pathName;
+    return pathName.substring(1);
   }
 };
