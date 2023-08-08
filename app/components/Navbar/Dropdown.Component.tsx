@@ -39,28 +39,23 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
                 {section.map((item) => {
                   return (
                     <MenuItem key={item.id}>
-                      {({ active }) => (
-                        <Link
-                          href={item.href}
-                          rel={item.external ? "noopener noreferrer" : ""}
-                          target={item.external ? "_blank" : ""}
-                          className={classNames(
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-500",
-                            "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-md cursor-pointer transition ease-in-out duration-300 "
-                          )}
-                        >
-                          {item.icon}
-                          {item.text}
-                          {item.external && (
-                            <Icon
-                              icon="feather:external-link"
-                              className="ml-auto"
-                            />
-                          )}
-                        </Link>
-                      )}
+                      <Link
+                        href={item.href}
+                        rel={item.external ? "noopener noreferrer" : ""}
+                        target={item.external ? "_blank" : ""}
+                        className={classNames(
+                          "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-md cursor-pointer transition ease-in-out duration-300 "
+                        )}
+                      >
+                        {item.icon}
+                        {item.text}
+                        {item.external && (
+                          <Icon
+                            icon="feather:external-link"
+                            className="ml-auto"
+                          />
+                        )}
+                      </Link>
                     </MenuItem>
                   );
                 })}

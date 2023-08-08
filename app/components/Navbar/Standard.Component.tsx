@@ -20,7 +20,7 @@ export const Standard = () => {
     <DisclousureNav>
       <NavContainer>
         <NavContent>
-          <span className="capitalize font-medium text-gray-500 hover:text-gray-900">
+          <span className="capitalize font-medium text-accent-foreground">
             ~/&nbsp;{pathName}
           </span>
           <div className="flex items-center gap-x-2">

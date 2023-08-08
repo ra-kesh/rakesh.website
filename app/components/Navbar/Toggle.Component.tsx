@@ -23,16 +23,13 @@ export const Toggle = () => {
                 onClick={() => setTheme(theme.theme)}
                 className="rounded-md"
               >
-                {({ active }) => (
-                  <span
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-500",
-                      " text-sm font-medium cursor-pointer  px-2 py-2  "
-                    )}
-                  >
-                    {theme.text}
-                  </span>
-                )}
+                <span
+                  className={classNames(
+                    " text-sm font-medium cursor-pointer  px-2 py-2  "
+                  )}
+                >
+                  {theme.text}
+                </span>
               </MenuItem>
             );
           })}
