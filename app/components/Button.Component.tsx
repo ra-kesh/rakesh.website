@@ -18,7 +18,7 @@ const Button = ({ children, href, rel, target, ...rest }: ButtonProps) => {
         border border-border bg-background shadow-sm hover:bg-muted text-accent-foreground
         rounded-lg cursor-pointer
         transition ease-in-out duration-300
-        px-6 py-2
+        px-6 py-2 mt-4 sm:mt-0
         "
         rel={rel}
         {...rest}

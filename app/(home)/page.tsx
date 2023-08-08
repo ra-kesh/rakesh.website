@@ -25,7 +25,7 @@ export default function Home() {
             JavaScript/TypeScript.
           </Description>
 
-          <div className="space-y-4 sm:space-x-4">
+          <div className="sm:space-x-4">
             {ACTIONS.map((action) => {
               return (
                 <Button

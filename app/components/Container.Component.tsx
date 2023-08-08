@@ -10,7 +10,7 @@ const WorkContainer = React.forwardRef<
       ref={ref}
       className={classNames(
         "flex flex-col sm:flex-row justify-center",
-        "mt-32",
+        "mt-32 sm:mt-36",
         className
       )}
       {...props}
@@ -29,7 +29,7 @@ const AboutContainer = React.forwardRef<
       ref={ref}
       className={classNames(
         "flex items-center justify-center",
-        "mt-32",
+        "mt-32 sm:mt-36",
         className
       )}
       {...props}
@@ -65,7 +65,9 @@ const NavContainer = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => {
-  return <div className={classNames("mx-auto px-2 ", className)} {...props} />;
+  return (
+    <div className={classNames("mx-auto sm:px-4 ", className)} {...props} />
+  );
 };
 
 const HomeContainer = ({
