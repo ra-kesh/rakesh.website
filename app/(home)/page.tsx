@@ -12,16 +12,6 @@ import {
 } from "../components";
 import { ACTIONS } from "../data";
 
-const Pill = () => {
-  return (
-    <div className="hidden md:block border border-gray-300 hover:border-gray-500 mb-6 py-1 px-3 max-w-fit mx-auto rounded-full ">
-      <span className="text-sm font-medium text-gray-700 dark:text-white">
-        Currently looking for my next full time role
-      </span>
-    </div>
-  );
-};
-
 export default function Home() {
   return (
     <Layout.Standard>
@@ -36,7 +26,7 @@ export default function Home() {
             JavaScript/TypeScript.
           </Description>
 
-          <Actions>
+          <div className="space-y-4 sm:space-x-4">
             {ACTIONS.map((action) => {
               return (
                 <Button
@@ -50,9 +40,19 @@ export default function Home() {
                 </Button>
               );
             })}
-          </Actions>
+          </div>
         </HomeContent>
       </HomeContainer>
     </Layout.Standard>
   );
 }
+
+const Pill = () => {
+  return (
+    <div className="hidden md:block border border-border mb-6 py-1 px-3 max-w-fit mx-auto rounded-full ">
+      <span className="text-sm font-medium ">
+        Currently looking for my next full time role
+      </span>
+    </div>
+  );
+};

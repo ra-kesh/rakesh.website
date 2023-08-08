@@ -14,13 +14,11 @@ const Button = ({ children, href, rel, target, ...rest }: ButtonProps) => {
       <button
         className="
         inline-flex items-center justify-center w-full sm:w-auto 
-        text-gray-500 hover:text-gray-600 dark:text-white
         font-medium
-        border-2  border-gray-300 hover:border-gray-400
+        border border-border bg-background shadow-sm hover:bg-accent hover:text-accent-foreground
         rounded-lg cursor-pointer
         transition ease-in-out duration-300
         px-6 py-2
-        focus:outline-none focus:ring-2 focus:ring-offset-4
         "
         rel={rel}
         {...rest}

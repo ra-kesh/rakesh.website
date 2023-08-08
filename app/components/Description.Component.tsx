@@ -11,8 +11,7 @@ export const Description = ({
       className={classNames(
         "max-w-xs md:max-w-4xl",
         "mx-auto my-4 md:my-8 ",
-        "text-base text-gray-700 ",
-        "dark:text-white",
+        "text-base",
         className
       )}
       {...props}

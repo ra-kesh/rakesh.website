@@ -8,7 +8,7 @@ const TitlePrimary = ({
   return (
     <h1
       className={classNames(
-        "text-gray-900 text-4xl md:text-5xl font-extrabold tracking-normal dark:text-white",
+        "text-4xl md:text-5xl font-extrabold tracking-normal",
         className
       )}
       {...props}
