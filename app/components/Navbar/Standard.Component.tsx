@@ -20,7 +20,9 @@ export const Standard = () => {
     <DisclousureNav>
       <NavContainer>
         <NavContent>
-          <span className="capitalize font-medium">~/&nbsp;{pathName}</span>
+          <span className="capitalize font-medium text-gray-500 hover:text-gray-900">
+            ~/&nbsp;{pathName}
+          </span>
           <div className="flex items-center gap-x-2">
             <Navbar.Toggle />
             <Navbar.Dropdown items={NAVIGATIONS}>
