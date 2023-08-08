@@ -19,11 +19,13 @@ export const BlogCard = ({
   return (
     <Card className="mb-5">
       <CardHeader className="h-40">
-        <CardTitle className="text-lg font-bold text-gray-800">
-          {title}
-        </CardTitle>
-        <CardDescription>{description}</CardDescription>
-        <span className=" text-xs text-gray-500 font-medium">{published}</span>
+        <CardTitle className="text-lg font-bold ">{title}</CardTitle>
+        <CardDescription className="text-accent-foreground">
+          {description}
+        </CardDescription>
+        <span className=" text-xs  font-medium text-muted-foreground">
+          {published}
+        </span>
       </CardHeader>
       <CardFooter className="flex gap-x-6 py-1">
         <Link
@@ -32,9 +34,7 @@ export const BlogCard = ({
           target="_blank"
           className="cursor-pointer transform hover:translate-x-1 transition duration-300 ease-in-out "
         >
-          <span className="font-bold text-gray-800 hover:text-gray-900">
-            Dev.to &rarr;
-          </span>
+          <span className="font-bold ">Dev.to &rarr;</span>
         </Link>
         <Link
           href={hashnode}
@@ -42,9 +42,7 @@ export const BlogCard = ({
           target="_blank"
           className="cursor-pointer transform hover:translate-x-1 transition duration-300 ease-in-out "
         >
-          <span className="font-bold text-gray-800 hover:text-gray-900">
-            Hashnode &rarr;
-          </span>
+          <span className="font-bold ">Hashnode &rarr;</span>
         </Link>
       </CardFooter>
     </Card>

@@ -11,9 +11,7 @@ const Card = React.forwardRef<
       className={classNames(
         "sm:w-80 h-52 w-full ",
         "rounded-xl border border-gray-200 ",
-        "bg-gray-100 bg-opacity-50 ",
-        "backdrop-filter backdrop-blur-sm",
-        "text-gray-900",
+        "bg-card text-card-foreground",
         "transition ease-in-out duration-300",
         className
       )}

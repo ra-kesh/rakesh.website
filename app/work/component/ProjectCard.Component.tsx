@@ -21,14 +21,17 @@ export const ProjectCard = ({
   return (
     <Card className="mb-5">
       <CardHeader className="h-40">
-        <CardTitle className="text-lg font-bold text-gray-800">
-          {title}
-        </CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-lg font-bold ">{title}</CardTitle>
+        <CardDescription className="text-accent-foreground">
+          {description}
+        </CardDescription>
         <div className="flex flex-wrap gap-x-2">
           {stack?.map((item, index) => {
             return (
-              <span key={index} className=" text-xs text-gray-500 font-medium">
+              <span
+                key={index}
+                className=" text-xs text-muted-foreground font-medium"
+              >
                 {item}
               </span>
             );
@@ -40,9 +43,9 @@ export const ProjectCard = ({
           href={source}
           rel="noopener noreferrer"
           target="_blank"
-          className="rounded-full p-2 cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out "
+          className="rounded-full p-2 cursor-pointer  transition duration-300 ease-in-out "
         >
-          <Icons.Github className="h-6 w-6 text-gray-800 hover:text-gray-900" />
+          <Icons.Github className="h-6 w-6 " />
         </Link>
         <Link
           href={link}
@@ -50,9 +53,7 @@ export const ProjectCard = ({
           target="_blank"
           className="cursor-pointer transform hover:translate-x-2 transition duration-300 ease-in-out "
         >
-          <span className="font-bold text-gray-800 hover:text-gray-900">
-            {linkText} &rarr;
-          </span>
+          <span className="font-bold ">{linkText} &rarr;</span>
         </Link>
       </CardFooter>
     </Card>
