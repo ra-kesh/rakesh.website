@@ -26,6 +26,7 @@
     "@headlessui/react": "^1.7.16",
     "@iconify/react": "^4.1.1",
     "@types/uuid": "^9.0.2",
+    "next-themes": "^0.2.1",
     "uuid": "^9.0.0"
   }
 }
