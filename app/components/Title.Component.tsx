@@ -8,7 +8,7 @@ const TitlePrimary = ({
   return (
     <h1
       className={classNames(
-        "text-gray-900 text-4xl md:text-5xl font-extrabold tracking-normal",
+        "text-gray-900 text-4xl md:text-5xl font-extrabold tracking-normal dark:text-white",
         className
       )}
       {...props}
@@ -26,6 +26,7 @@ const TitleSecondary = ({
         "text-2xl md:text-3xl font-bold text-gray-900",
         "max-w-xs md:max-w-4xl mx-auto",
         "leading-tight tracking-tighter lg:leading-[1.1]",
+        "dark:text-white",
         className
       )}
       {...props}

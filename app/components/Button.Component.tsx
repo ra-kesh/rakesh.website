@@ -14,7 +14,7 @@ const Button = ({ children, href, rel, target, ...rest }: ButtonProps) => {
       <button
         className="
         inline-flex items-center justify-center w-full sm:w-auto 
-        text-gray-500 hover:text-gray-600
+        text-gray-500 hover:text-gray-600 dark:text-white
         font-medium
         border-2  border-gray-300 hover:border-gray-400
         rounded-lg cursor-pointer
