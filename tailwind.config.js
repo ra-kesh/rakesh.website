@@ -7,6 +7,13 @@ module.exports = {
   ],
   darkMode: ["class"],
   theme: {
+    colors: {
+      background: "hsl(var(--background))",
+    },
+    fontFamily: {
+      sans: ["var(--font-inter)"],
+      mono: ["var(--font-roboto-mono)"],
+    },
     extend: {
       keyframes: {
         wave: {
