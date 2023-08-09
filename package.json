@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -26,6 +27,7 @@
     "@headlessui/react": "^1.7.16",
     "@iconify/react": "^4.1.1",
     "@types/uuid": "^9.0.2",
+    "next-sitemap": "^4.2.2",
     "next-themes": "^0.2.1",
     "uuid": "^9.0.0"
   }

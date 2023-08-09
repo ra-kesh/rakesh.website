@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /*.json$
+Disallow: /*_buildManifest.js$
+Disallow: /*_middlewareManifest.js$
+Disallow: /*_ssgManifest.js$
+Disallow: /*.js$
+
+# Host
+Host: https://www.rakesh.website
+
+# Sitemaps
+Sitemap: https://www.rakesh.website/sitemap.xml
