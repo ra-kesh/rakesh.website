@@ -18,7 +18,7 @@ const TabsList = React.forwardRef<
   <Tab.List
     ref={ref}
     className={classNames(
-      "my-4 mx-4 p-1 rounded-xl inline-flex gap-2  border border-border",
+      "mb-4 mx-4 p-1 rounded-xl inline-flex gap-2  border border-border",
       "bg-muted text-muted-foreground",
       className
     )}
