@@ -9,7 +9,7 @@ export const Description = ({
   return (
     <p
       className={classNames(
-        "max-w-xs md:max-w-4xl",
+        "max-w-xs ",
         "mx-auto my-4 md:my-8 ",
         "text-base text-accent-foreground",
         className

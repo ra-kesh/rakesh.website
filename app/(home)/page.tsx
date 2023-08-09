@@ -20,7 +20,7 @@ export default function Home() {
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
           </TitlePrimary>
-          <Description className="text-xl">
+          <Description className="text-xl md:max-w-4xl">
             A frontend developer who loves to work on React and all things
             JavaScript/TypeScript.
           </Description>
@@ -48,8 +48,8 @@ export default function Home() {
 
 const Pill = () => {
   return (
-    <div className="hidden md:block border border-border mb-6 py-1 px-3 max-w-fit mx-auto rounded-full ">
-      <span className="text-xs font-medium text-accent-foreground">
+    <div className="flex items-center border border-border mb-6 py-2 px-4 max-w-fit mx-auto rounded-full">
+      <span className="text-xs font-medium text-accent-foreground tracking-normal ">
         Currently looking for my next full time role
       </span>
     </div>
