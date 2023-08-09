@@ -7,7 +7,10 @@ import { useGetPathName } from "./useGetPathName.hook";
 
 const DisclousureNav = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Disclosure as="nav" className="sm:fixed sm:top-5  left-0 w-full z-10">
+    <Disclosure
+      as="nav"
+      className="mt-5 sm:mt-0 sm:fixed sm:top-5 left-0 w-full z-10"
+    >
       {children}
     </Disclosure>
   );
