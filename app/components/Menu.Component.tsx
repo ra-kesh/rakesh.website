@@ -47,7 +47,7 @@ const MenuItems = React.forwardRef<
       ref={ref}
       className={classNames(
         "absolute z-10 right-0 origin-top-right mt-2",
-        "backdrop-blur-sm bg-popover/80 text-popover-foreground border border-border",
+        "backdrop-blur-sm bg-popover/80  border border-border",
         "rounded-lg shadow-md",
         className
       )}
@@ -65,10 +65,7 @@ const MenuItem = React.forwardRef<
   return (
     <Menu.Item
       ref={ref}
-      className={classNames(
-        "hover:bg-muted focus:bg-muted text-accent-foreground  ",
-        className
-      )}
+      className={classNames("hover:bg-muted focus:bg-muted   ", className)}
       {...props}
     />
   );
