@@ -7,14 +7,21 @@ import { siteConfig } from "./lib/config";
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
-  keywords: ["Portfolio", "Next.js", "React", "Tailwind CSS", "Headless UI"],
+  keywords: [
+    "Portfolio",
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Headless UI",
+    "Personal Website",
+  ],
   authors: [
     {
-      name: "rakesh",
-      url: "https://rakesh.website",
+      name: siteConfig.name,
+      url: siteConfig.url,
     },
   ],
-  creator: "rakesh",
+  creator: siteConfig.name,
   openGraph: {
     type: "website",
     locale: "en_US",

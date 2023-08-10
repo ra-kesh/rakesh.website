@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import React from "react";
+import { siteConfig } from "../lib/config";
 
 export const metadata: Metadata = {
-  title: "About | Rakesh Kumar",
+  title: `About | ${siteConfig.name}`,
   description: "A brief introduction about myself and what I have been doing",
 };
 
