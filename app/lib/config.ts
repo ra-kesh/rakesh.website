@@ -8,7 +8,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/kumarakeshh",
     github: "https://github.com/ra-kesh",
     linkedin: "https://www.linkedin.com/in/iamrakeshkumar/",
-    cv: "https://rakesh.website/cv",
+    cv: "/cv.pdf",
   },
 };
 

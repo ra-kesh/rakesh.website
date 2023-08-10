@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "alias": "www.rakesh.website",
+  "cleanUrls": true,
+  "public": true,
+  "regions": ["bom1"],
+  "redirects": [
+    { "source": "/github", "destination": "https://github.com/ra-kesh" },
+    {
+      "source": "/linkedin",
+      "destination": "https://www.linkedin.com/in/iamrakeshkumar/"
+    },
+    { "source": "/portfolio", "destination": "/projects" },
+    { "source": "/twitter", "destination": "https://twitter.com/kumarakeshh" },
+    { "source": "/peerlist", "destination": "https://peerlist.io/rakesh" },
+    {
+      "source": "/polywork",
+      "destination": "https://www.polywork.com/iamrakesh"
+    },
+    {
+      "source": "/showcase",
+      "destination": "https://www.showwcase.com/rakesh"
+    },
+    { "source": "/dev", "destination": "https://dev.to/rakesh" },
+    { "source": "/hashnode", "destination": "https://rakesh.hashnode.dev/" },
+    { "source": "/mail", "destination": "mailto:iamrakeshkumar@pm.me" },
+    { "source": "/rave", "destination": "https://raveit.netlify.app/" },
+    {
+      "source": "/mad",
+      "destination": "https://moto-armor-depot.netlify.app/products"
+    },
+    { "source": "/quiz", "destination": "https://rto-quiz.netlify.app/" },
+    { "source": "/torque", "destination": "https://torquetv.netlify.app/" },
+    { "source": "/run", "destination": "https://runreact.netlify.app/" },
+    {
+      "source": "/stack",
+      "destination": "https://stackoverflow.com/users/14043051/r4k3sh"
+    },
+    {
+      "source": "/resume",
+      "destination": "https://drive.google.com/file/d/1GHyCfN7kKLc0cisTvxqMBUbHqLNCHUsq/view"
+    },
+    {
+      "source": "/cv",
+      "destination": "https://drive.google.com/file/d/1GHyCfN7kKLc0cisTvxqMBUbHqLNCHUsq/view"
+    }
+  ]
+}
