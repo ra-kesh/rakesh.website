@@ -36,8 +36,9 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     className={({ selected }: { selected: Boolean }) =>
       classNames(
-        "py-1 px-4 rounded-lg text-sm font-medium  cursor-pointer",
-        "transition ease-in-out duration-300 hover:text-foreground",
+        "py-1 px-4 rounded-lg text-sm hover:text-foreground font-medium  cursor-pointer",
+        "transition ease-in-out duration-300",
+        // "focus-visible:outline-none focus:outline-none focus:ring-ring focus:ring-2 focus:ring-offset-2 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         selected
           ? "bg-background text-foreground border border-border"
           : "text-muted-foreground ",

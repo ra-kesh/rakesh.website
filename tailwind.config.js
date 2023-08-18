@@ -32,6 +32,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         border: "hsl(var(--border))",
+        ring: "hsl(var(--ring))",
       },
       keyframes: {
         wave: {
