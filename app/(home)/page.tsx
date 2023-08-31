@@ -20,7 +20,7 @@ export default function Home() {
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
           </TitlePrimary>
-          <Description className="text-xl md:max-w-4xl">
+          <Description className="text-xl md:max-w-3xl">
             A frontend developer who loves to work on React and all things
             JavaScript/TypeScript.
           </Description>

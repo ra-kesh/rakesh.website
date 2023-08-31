@@ -9,7 +9,7 @@ const WorkContent = React.forwardRef<
     <div
       ref={ref}
       className={classNames(
-        "max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-5xl w-full",
+        "max-w-md sm:max-w-lg md:max-w-3xl  w-full",
         " mx-auto",
         className
       )}
@@ -28,7 +28,7 @@ const AboutContent = React.forwardRef<
     <div
       ref={ref}
       className={classNames(
-        "max-w-lg sm:max-w-xl md:max-w-4xl  w-full",
+        "max-w-lg sm:max-w-xl md:max-w-3xl w-full",
         "text-left",
         className
       )}
@@ -46,7 +46,7 @@ const HomeContent = ({
   return (
     <div
       className={classNames(
-        "max-w-lg sm:max-w-xl md:max-w-4xl w-full",
+        "max-w-lg sm:max-w-xl md:max-w-3xl w-full",
         "text-center",
         className
       )}
