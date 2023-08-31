@@ -28,6 +28,8 @@ export { Icons } from "./Icon.Component";
 
 export { Description } from "./Description.Component";
 
+export { Back } from "./Back.Component";
+
 import Wave from "./Wave.Component";
 import Button from "./Button.Component";
 

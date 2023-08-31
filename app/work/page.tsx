@@ -10,6 +10,7 @@ import {
   WorkContent,
   WorkContainer,
   ListContainer,
+  Back,
 } from "../components";
 import { BLOGS, PROJECTS } from "../data";
 import { ProjectCard, BlogCard } from "./component";
@@ -19,6 +20,7 @@ export default function Projects() {
     <Layout.Standard>
       <WorkContainer>
         <WorkContent>
+          <Back />
           <TabGroup>
             <TabsList>
               <TabsTrigger>Projects</TabsTrigger>

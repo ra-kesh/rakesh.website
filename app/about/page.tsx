@@ -7,6 +7,7 @@ import {
   Layout,
   TitleSecondary,
   Description,
+  Back,
 } from "../components";
 
 export default function About() {
@@ -14,6 +15,7 @@ export default function About() {
     <Layout.Standard>
       <AboutContainer>
         <AboutContent>
+          <Back />
           <TitleSecondary>Hi There !</TitleSecondary>
           <Description className="md:max-w-3xl">
             I am a frontend developer based out of India, who loves to craft
