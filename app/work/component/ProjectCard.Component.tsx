@@ -18,34 +18,31 @@ export const ProjectCard = ({
   link,
   linkText,
 }: ProjectItem) => {
+  const techStack = stack?.map((item, index) => {
+    return (
+      <span key={index} className=" text-xs text-muted-foreground font-medium">
+        {item}
+      </span>
+    );
+  });
+
   return (
     <Card className="mb-5">
-      <CardHeader className="h-40">
+      <CardHeader className="">
         <CardTitle className="text-lg font-bold ">{title}</CardTitle>
         <CardDescription className="text-accent-foreground">
           {description}
         </CardDescription>
-        <div className="flex flex-wrap gap-x-2">
-          {stack?.map((item, index) => {
-            return (
-              <span
-                key={index}
-                className=" text-xs text-muted-foreground font-medium"
-              >
-                {item}
-              </span>
-            );
-          })}
-        </div>
+        <div className="flex flex-wrap gap-x-2">{techStack}</div>
       </CardHeader>
-      <CardFooter className="flex gap-x-4 py-1">
+      <CardFooter className="flex gap-x-4 ">
         <Link
           href={source}
           rel="noopener noreferrer"
           target="_blank"
           className="rounded-full p-2 cursor-pointer  transition duration-300 ease-in-out "
         >
-          <Icons.Github className="h-6 w-6 " />
+          <Icons.Github className="h-6 w-6" />
         </Link>
         <Link
           href={link}

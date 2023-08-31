@@ -18,7 +18,7 @@ export const BlogCard = ({
 }: BlogItem) => {
   return (
     <Card className="mb-5">
-      <CardHeader className="h-40">
+      <CardHeader>
         <CardTitle className="text-lg font-bold ">{title}</CardTitle>
         <CardDescription className="text-accent-foreground">
           {description}
@@ -27,7 +27,7 @@ export const BlogCard = ({
           {published}
         </span>
       </CardHeader>
-      <CardFooter className="flex gap-x-6 py-1">
+      <CardFooter className="flex gap-x-6 ">
         <Link
           href={dev}
           rel="noopener noreferrer"
