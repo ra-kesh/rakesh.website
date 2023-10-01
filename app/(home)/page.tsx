@@ -9,6 +9,7 @@ import {
   HomeContent,
   HomeContainer,
 } from "../components";
+import { Pill } from "../components/Pill.Component";
 import { ACTIONS } from "../data";
 
 export default function Home() {
@@ -16,7 +17,11 @@ export default function Home() {
     <Layout.Standard>
       <HomeContainer>
         <HomeContent>
-          <Pill />
+          <Pill>
+            <span className="text-xs font-medium text-accent-foreground tracking-normal ">
+              looking for my next full time role
+            </span>
+          </Pill>
           <TitlePrimary>
             Hello<Wave>👋 </Wave>, I am Rakesh!
           </TitlePrimary>
@@ -45,13 +50,3 @@ export default function Home() {
     </Layout.Standard>
   );
 }
-
-const Pill = () => {
-  return (
-    <div className="flex items-center border border-border mb-6 py-2 px-4 max-w-fit mx-auto rounded-full">
-      <span className="text-xs font-medium text-accent-foreground tracking-normal ">
-        Currently looking for my next full time role
-      </span>
-    </div>
-  );
-};
