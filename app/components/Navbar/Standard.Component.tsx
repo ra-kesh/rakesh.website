@@ -1,9 +1,9 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { NavContainer, NavContent, Navbar } from "..";
-import { Icon } from "@iconify/react";
 import { NAVIGATIONS } from "@/app/data";
 import { useGetPathName } from "./useGetPathName.hook";
+import { PhListBold } from "../Icon.Component";
 
 const DisclousureNav = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -29,7 +29,7 @@ export const Standard = () => {
           <div className="flex items-center gap-x-2">
             <Navbar.Toggle />
             <Navbar.Dropdown items={NAVIGATIONS}>
-              <Icon icon="feather:menu" />
+              <PhListBold />
             </Navbar.Dropdown>
           </div>
         </NavContent>

@@ -4,7 +4,7 @@ import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import React from "react";
 import { MenuGroup, MenuButton, MenuItem, MenuItems } from "..";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { PhArrowUpRightBold } from "../Icon.Component";
 
 type DropdownProps = {
   children: React.ReactNode;
@@ -34,10 +34,7 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
                         {item.icon}
                         {item.text}
                         {item.external && (
-                          <Icon
-                            icon="feather:external-link"
-                            className="ml-auto"
-                          />
+                          <PhArrowUpRightBold className="ml-auto" />
                         )}
                       </Link>
                     </MenuItem>

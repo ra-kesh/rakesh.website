@@ -1,18 +1,18 @@
 import React from "react";
 import { MenuButton, MenuGroup, MenuItem, MenuItems } from "..";
-import { Icon } from "@iconify/react/dist/iconify.js";
 import { Transition } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { classNames } from "@/app/lib/util";
 import { THEMES } from "@/app/data/theme";
+import { PhMoonBold, PhSunBold } from "../Icon.Component";
 
 export const Toggle = () => {
   const { setTheme } = useTheme();
   return (
     <MenuGroup>
       <MenuButton>
-        <Icon icon="feather:sun" className=" block dark:hidden " />
-        <Icon icon="feather:moon" className="hidden dark:block" />
+        <PhSunBold className=" block dark:hidden " />
+        <PhMoonBold className="hidden dark:block" />
       </MenuButton>
       <DropDownTransition>
         <MenuItems className="w-28 flex flex-col p-2">

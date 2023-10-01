@@ -6,9 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  Icons,
 } from "../../components";
 import Link from "next/link";
+import { PhGithubLogoBold } from "@/app/components/Icon.Component";
 
 export const ProjectCard = ({
   description,
@@ -42,7 +42,7 @@ export const ProjectCard = ({
           target="_blank"
           className="rounded-full p-2 cursor-pointer  transition duration-300 ease-in-out "
         >
-          <Icons.Github className="h-6 w-6" />
+          <PhGithubLogoBold />
         </Link>
         <Link
           href={link}
