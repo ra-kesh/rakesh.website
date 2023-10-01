@@ -4,4 +4,5 @@ export type NavigationItem = {
   icon: string | React.ReactNode;
   text: string;
   external?: boolean;
+  type?: "link" | "text";
 };

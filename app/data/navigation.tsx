@@ -3,6 +3,7 @@ import { NavigationItem } from "../types";
 import { siteConfig } from "../lib/config";
 import {
   PhBriefcaseSimpleBold,
+  PhEnvelopeSimpleBold,
   PhFileTextBold,
   PhGithubLogoBold,
   PhHouseBold,
@@ -55,14 +56,21 @@ export const NAVIGATIONS: Array<Array<NavigationItem>> = [
       icon: <PhLinkedinLogoBold className="mr-3" />,
       text: "Linkedin",
     },
-  ],
-  [
     {
       id: uuid(),
       href: siteConfig.links.cv,
       external: true,
       icon: <PhFileTextBold className="mr-3" />,
       text: "Resume",
+    },
+  ],
+  [
+    {
+      id: uuid(),
+      href: siteConfig.links.email,
+      type: "text",
+      icon: <PhEnvelopeSimpleBold className="mr-3" />,
+      text: "Email",
     },
   ],
 ];

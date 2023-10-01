@@ -4,7 +4,8 @@ import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import React from "react";
 import { MenuGroup, MenuButton, MenuItem, MenuItems } from "..";
-import { PhArrowUpRightBold } from "../Icon.Component";
+import { PhArrowUpRightBold, PhCopySimpleBold } from "../Icon.Component";
+import { siteConfig } from "@/app/lib/config";
 
 type DropdownProps = {
   children: React.ReactNode;
@@ -12,6 +13,14 @@ type DropdownProps = {
 };
 
 export const Dropdown = ({ children, items }: DropdownProps) => {
+  const copyToClipboard = (
+    e: React.MouseEvent<SVGSVGElement, MouseEvent>,
+    textToCopy: string
+  ) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(textToCopy);
+  };
+
   return (
     <MenuGroup>
       <MenuButton>{children}</MenuButton>
@@ -21,24 +30,46 @@ export const Dropdown = ({ children, items }: DropdownProps) => {
             return (
               <section key={index} className="py-2">
                 {section.map((item) => {
-                  return (
-                    <MenuItem key={item.id}>
-                      <Link
-                        href={item.href}
-                        rel={item.external ? "noopener noreferrer" : ""}
-                        target={item.external ? "_blank" : ""}
-                        className={classNames(
-                          "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-lg cursor-pointer transition ease-in-out duration-300 "
-                        )}
-                      >
-                        {item.icon}
-                        {item.text}
-                        {item.external && (
-                          <PhArrowUpRightBold className="ml-auto" />
-                        )}
-                      </Link>
-                    </MenuItem>
-                  );
+                  if (item.type === "text") {
+                    return (
+                      <MenuItem key={item.id}>
+                        <div
+                          className={classNames(
+                            "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-lg cursor-pointer transition ease-in-out duration-300 "
+                          )}
+                        >
+                          {item.icon}
+                          {item.text}
+
+                          <PhCopySimpleBold
+                            className="ml-auto transform active:scale-75 transition-transform"
+                            onClick={(e) =>
+                              copyToClipboard(e, siteConfig.links.email)
+                            }
+                          />
+                        </div>
+                      </MenuItem>
+                    );
+                  } else {
+                    return (
+                      <MenuItem key={item.id}>
+                        <Link
+                          href={item.href}
+                          rel={item.external ? "noopener noreferrer" : ""}
+                          target={item.external ? "_blank" : ""}
+                          className={classNames(
+                            "flex items-center px-4 py-3 text-sm font-medium tracking-wide rounded-lg cursor-pointer transition ease-in-out duration-300 "
+                          )}
+                        >
+                          {item.icon}
+                          {item.text}
+                          {item.external && (
+                            <PhArrowUpRightBold className="ml-auto" />
+                          )}
+                        </Link>
+                      </MenuItem>
+                    );
+                  }
                 })}
               </section>
             );
