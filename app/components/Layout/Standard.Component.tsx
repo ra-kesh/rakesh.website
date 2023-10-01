@@ -8,7 +8,6 @@ const Main = ({ children }: { children: React.ReactNode }) => {
 export const Standard = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      {/* <NextSeo {...defaultSeoProps} {...seo} /> */}
       <Navbar.Standard />
       <Main>{children}</Main>
     </>
