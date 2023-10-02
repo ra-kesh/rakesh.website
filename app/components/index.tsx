@@ -1,5 +1,4 @@
 export * as Navbar from "./Navbar";
-export * as Layout from "./Layout";
 export { TabGroup, TabsList, TabsTrigger, TabsContent } from "./Tabs.Component";
 export { TitlePrimary, TitleSecondary } from "./Title.Component";
 export {

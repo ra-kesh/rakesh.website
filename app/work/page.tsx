@@ -2,7 +2,6 @@
 
 import React from "react";
 import {
-  Layout,
   TabsContent,
   TabsList,
   TabsTrigger,
@@ -14,27 +13,28 @@ import {
 } from "../components";
 import { BLOGS, PROJECTS } from "../data";
 import { ProjectCard, BlogCard } from "./component";
+import { withNavbar } from "../components/Navbar/WithNavbar.Component";
 
-export default function Projects() {
+function Projects() {
   return (
-    <Layout.Standard>
-      <WorkContainer>
-        <WorkContent>
-          <Back />
-          <TabGroup>
-            <TabsList>
-              <TabsTrigger>Projects</TabsTrigger>
-              <TabsTrigger>Blogs</TabsTrigger>
-            </TabsList>
-            <TabsContent>
-              <ListContainer items={PROJECTS} item={ProjectCard} />{" "}
-            </TabsContent>
-            <TabsContent>
-              <ListContainer items={BLOGS} item={BlogCard} />
-            </TabsContent>
-          </TabGroup>
-        </WorkContent>
-      </WorkContainer>
-    </Layout.Standard>
+    <WorkContainer>
+      <WorkContent>
+        <Back />
+        <TabGroup>
+          <TabsList>
+            <TabsTrigger>Projects</TabsTrigger>
+            <TabsTrigger>Blogs</TabsTrigger>
+          </TabsList>
+          <TabsContent>
+            <ListContainer items={PROJECTS} item={ProjectCard} />{" "}
+          </TabsContent>
+          <TabsContent>
+            <ListContainer items={BLOGS} item={BlogCard} />
+          </TabsContent>
+        </TabGroup>
+      </WorkContent>
+    </WorkContainer>
   );
 }
+
+export default withNavbar(Projects);
