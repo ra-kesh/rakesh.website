@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "www.rakesh.website",
+  "alias": "www.rakeshh.vercel.app",
   "cleanUrls": true,
   "public": true,
   "regions": ["bom1"],
@@ -27,7 +27,7 @@
     { "source": "/rave", "destination": "https://raveit.netlify.app/" },
     {
       "source": "/mad",
-      "destination": "https://moto-armor-depot.netlify.app/products"
+      "destination": "https://moto-armor-depot.netlify.app"
     },
     { "source": "/quiz", "destination": "https://rto-quiz.netlify.app/" },
     { "source": "/torque", "destination": "https://torquetv.netlify.app/" },
@@ -38,11 +38,11 @@
     },
     {
       "source": "/resume",
-      "destination": "https://drive.google.com/file/d/1GHyCfN7kKLc0cisTvxqMBUbHqLNCHUsq/view"
+      "destination": "https://rakeshh.vercel.app/cv.pdf"
     },
     {
       "source": "/cv",
-      "destination": "https://drive.google.com/file/d/1GHyCfN7kKLc0cisTvxqMBUbHqLNCHUsq/view"
+      "destination": "https://rakeshh.vercel.app/cv.pdf"
     }
   ]
 }
