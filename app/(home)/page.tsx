@@ -16,11 +16,11 @@ function Home() {
   return (
     <HomeContainer>
       <HomeContent>
-        <Pill>
+        {/* <Pill>
           <span className="text-xs font-medium text-accent-foreground tracking-normal ">
             looking for my next full time role
           </span>
-        </Pill>
+        </Pill> */}
         <TitlePrimary>
           Hello<Wave>👋 </Wave>, I am Rakesh!
         </TitlePrimary>
