@@ -5,6 +5,13 @@ import { inter, roboto_mono } from "./font";
 import { siteConfig } from "./lib/config";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
