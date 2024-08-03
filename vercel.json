@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "alias": "www.rakeshh.vercel.app",
+  "version": 3,
+  "alias": "www.rakyesh.com",
   "cleanUrls": true,
   "public": true,
   "regions": ["bom1"],
@@ -38,11 +38,11 @@
     },
     {
       "source": "/resume",
-      "destination": "https://rakeshh.vercel.app/cv.pdf"
+      "destination": "https://www.rakyesh.com/resume.pdf"
     },
     {
       "source": "/cv",
-      "destination": "https://rakeshh.vercel.app/cv.pdf"
+      "destination": "https://www.rakyesh.com/resume.pdf"
     }
   ]
 }

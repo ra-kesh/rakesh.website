@@ -6,7 +6,7 @@ export const PROJECTS: Array<ProjectItem> = [
     id: uuid(),
     title: "MAD",
     link: "https://moto-armor-depot.netlify.app/",
-    linkText: "rakesh.website/mad",
+    linkText: "rakyesh.com/mad",
     source: "https://github.com/ra-kesh/armor",
     stack: ["react", "node", "express", "mongodb"],
     description:
@@ -16,7 +16,7 @@ export const PROJECTS: Array<ProjectItem> = [
     id: uuid(),
     title: "RAVE",
     link: "https://raveit.netlify.app/",
-    linkText: "rakesh.website/rave",
+    linkText: "rakyesh.com/rave",
     source: "https://github.com/ra-kesh/rave",
     stack: ["react", "node", "express", "mongodb", "redux toolkit"],
     description:
@@ -27,7 +27,7 @@ export const PROJECTS: Array<ProjectItem> = [
     title: "Run React",
     link: "https://runreact.netlify.app/",
     source: "https://github.com/ra-kesh/snowpack-ide",
-    linkText: "rakesh.website/run",
+    linkText: "rakyesh.com/run",
     stack: ["react", "esbuild-wasm", "typescript"],
     description:
       "An IDE that can fetch packages from UNPKG and bundle them together on the browser using ESBUILD-WASM.",
@@ -36,7 +36,7 @@ export const PROJECTS: Array<ProjectItem> = [
   //   id: uuid(),
   //   title: "Torque",
   //   link: "https://torquetv.netlify.app/",
-  //   linkText: "rakesh.website/torque",
+  //   linkText: "https://www.rakyesh.com/torque",
   //   source: "https://github.com/ra-kesh/torque",
   //   stack: ["react", "node", "express", "mongodb"],
   //   description:

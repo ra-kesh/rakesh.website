@@ -1,4 +1,4 @@
-# [rakesh.website](https://rakesh.website)
+# [rakyesh.com](https://www.rakyesh.com/)
 
 Thanks for checking out my personal space on internet !
 

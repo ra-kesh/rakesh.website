@@ -8,7 +8,7 @@ Disallow: /*_ssgManifest.js$
 Disallow: /*.js$
 
 # Host
-Host: https://www.rakesh.website
+Host: https://www.rakyesh.com/
 
 # Sitemaps
-Sitemap: https://www.rakesh.website/sitemap.xml
+Sitemap: https://www.rakyesh.com/sitemap.xml
